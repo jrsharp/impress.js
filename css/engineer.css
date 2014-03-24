@@ -1,26 +1,4 @@
 /*
-    So you like the style of impress.js demo?
-    Or maybe you are just curious how it was done?
-
-    You couldn't find a better place to find out!
-
-    Welcome to the stylesheet impress.js demo presentation.
-
-    Please remember that it is not meant to be a part of impress.js and is
-    not required by impress.js.
-    I expect that anyone creating a presentation for impress.js would create
-    their own set of styles.
-
-    But feel free to read through it and learn how to get the most of what
-    impress.js provides.
-
-    And let me be your guide.
-
-    Shall we begin?
-*/
-
-
-/*
     We start with a good ol' reset.
     That's the one by Eric Meyer http://meyerweb.com/eric/tools/css/reset/
 
@@ -57,9 +35,11 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
 }
+/*
 ol, ul {
     list-style: none;
 }
+*/
 blockquote, q {
     quotes: none;
 }
@@ -85,6 +65,9 @@ body {
     font-family: 'PT Sans', sans-serif;
     min-height: 740px;
 
+/*
+    background-image: url('../486_1.jpg');
+*/
     background: rgb(215, 215, 215);
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
     background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
@@ -227,6 +210,78 @@ a:focus {
     letter-spacing: -1px;
 }
 
+.slide1.present {
+	webkit-transition-delay: .15s;
+	transition-delay: .15s;
+	background-image: url('../bigwave.jpg');
+    color: black;
+}
+
+.slide2.present {
+	webkit-transition-delay: .15s;
+	transition-delay: .15s;
+	background-image: url('../sunset.jpg');
+    color: white;
+}
+
+.slide3.present {
+	webkit-transition-delay: .15s;
+	transition-delay: .15s;
+	background-image: url('../northernlights.jpg');
+    color: white;
+}
+
+.slide4.present {
+	webkit-transition-delay: .15s;
+	transition-delay: .15s;
+	background-image: url('../sandstorm.jpg');
+	filter:alpha(opacity=50);
+    color: black;
+}
+
+.xoeye.present {
+	webkit-transition-delay: .15s;
+	transition-delay: .15s;
+	background-image: url('../xoeye.png');
+	background-size: cover;
+	filter:alpha(opacity=50);
+    color: black;
+}
+
+.slide {
+	font-size: 300%;
+	line-height: 170%;
+	padding: 50px 80px 80px 80px;
+}
+
+.slide a {
+	--position: relative;
+	--top: 100px;
+	font-size: 50%;
+}
+
+/*
+div.slide1:not(.active) {
+	display: none;
+}
+
+div.slide2:not(.active) {
+	display: none;
+}
+
+div.slide1.present {
+	webkit-transition-delay: .5s;
+	transition-delay: .5s;
+	display: block;
+}
+
+div.slide2.present {
+	webkit-transition-delay: .5s;
+	transition-delay: .5s;
+	display: block;
+}
+*/
+
 .slide q {
     display: block;
     font-size: 50px;
@@ -352,6 +407,20 @@ a:focus {
     -ms-transform:     rotate(-10deg);
     -o-transform:      rotate(-10deg);
     transform:         rotate(-10deg);
+
+    -webkit-transition-delay: 0.25s;
+    -moz-transition-delay:    0.25s;
+    -ms-transition-delay:     0.25s;
+    -o-transition-delay:      0.25s;
+    transition-delay:         0.25s;
+}
+
+#trend3 {
+	-webkit-transform: rotate(30deg);
+    -moz-transform:    rotate(30deg);
+    -ms-transform:     rotate(30deg);
+    -o-transform:      rotate(30deg);
+    transform:         rotate(30deg);
 
     -webkit-transition-delay: 0.25s;
     -moz-transition-delay:    0.25s;
